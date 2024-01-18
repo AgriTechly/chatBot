@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="w-full h-screen">
+        <div class="flex h-full">
+            <div class="flex-1 bg-gray-100 w-full h-full">
+                <div class="main-body container m-auto w-11/12 h-full flex flex-col">
+    
+                    <div class="main flex-1 flex flex-col">
+                        <div class="hidden lg:block heading flex-2">
+                            <h1 class="text-3xl text-gray-700 mb-4">Chat</h1>
+                        </div>
+
+                        <div class="flex-1 flex h-full">
+                            <div class="chat-area flex-1 flex flex-col">
+                                <div class="messages flex-1 overflow-auto ">
+                                    <div class="message mb-4 flex">
+                                        <div class="flex-2">
+                                            <div class="w-12 h-12 relative">
+                                                <img class="w-12 h-12 rounded-full mx-auto" src="../resources/profile-image.png" alt="chat-user" />
+                                                <span class="absolute w-4 h-4 bg-gray-400 rounded-full right-0 bottom-0 border-2 border-white"></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 px-2">
+                                            <div class="inline-block bg-gray-300 rounded-full p-2 px-6 text-gray-700">
+                                                <span>Hey there. We would like to invite you over to our office for a visit. How about it?</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="message mb-4 flex">
+                                        <div class="flex-2">
+                                            <div class="w-12 h-12 relative">
+                                                <img class="w-12 h-12 rounded-full mx-auto" src="../resources/profile-image.png" alt="chat-user" />
+                                                <span class="absolute w-4 h-4 bg-gray-400 rounded-full right-0 bottom-0 border-2 border-white"></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 px-2">
+                                            <div class="inline-block bg-gray-300 rounded-full p-2 px-6 text-gray-700">
+                                                <span>All travel expenses are covered by us of course :D</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="message me mb-4 flex text-right">
+                                        <div class="flex-1 px-2">
+                                            <div class="inline-block bg-blue-600 rounded-full p-2 px-6 text-white">
+                                                <span>It's like a dream come true</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="message me mb-4 flex text-right">
+                                        <div class="flex-1 px-2">
+                                            <div class="inline-block bg-blue-600 rounded-full p-2 px-6 text-white">
+                                                <span>I accept. Thank you very much.</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="message mb-4 flex">
+                                        <div class="flex-2">
+                                            <div class="w-12 h-12 relative">
+                                                <img class="w-12 h-12 rounded-full mx-auto" src="../resources/profile-image.png" alt="chat-user" />
+                                                <span class="absolute w-4 h-4 bg-gray-400 rounded-full right-0 bottom-0 border-2 border-white"></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1 px-2">
+                                            <div class="inline-block bg-gray-300 rounded-full p-2 px-6 text-gray-700">
+                                                <span>You are welome. We will stay in touch.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-2 pt-4 pb-10">
+                                    <div class="write bg-white shadow flex rounded-lg">
+                                        <div class="flex-3 flex content-center items-center text-center p-4 pr-0">
+                                        </div>
+                                        <div class="flex-1">
+                                            <textarea name="message" class="w-full block outline-none py-4 px-4 bg-transparent" rows="1" placeholder="Type a message..." autofocus></textarea>
+                                        </div>
+                                        <div class="flex-2 w-32 p-2 flex content-center items-center">
+                                            <div class="flex-1 text-center">
+
+                                            </div>
+                                            <div class="flex-1">
+                                                <button class="bg-blue-400 w-10 h-10 rounded-full inline-block">
+                                                    <span class="inline-block align-text-bottom">
+                                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 text-white"><path d="M5 13l4 4L19 7"></path></svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
