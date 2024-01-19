@@ -3,13 +3,7 @@ export default function EmptyState({ setOpen, setPrompt }) {
     <div className="mt-12 sm:mt-24 space-y-6 text-gray-400 text-base mx-8 sm:mx-4 sm:text-2xl leading-12">
       <p>
         {" "}
-        AgriChat is the assistant chatbot for your{" "}
-        <button
-          className="prompt-button inline-flex items-center "
-          onClick={() => setOpen(true)}
-        >
-          AgriTechly Platform{" "}
-        </button>{" "}.
+        AgriChat is the assistant chatbot for your AgriTechly Platform.
       </p>
       <p>
         I can{" "}

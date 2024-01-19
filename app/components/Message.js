@@ -1,3 +1,4 @@
+import * as botImage from "../../styles/bot.png";
 const Message = ({ message, isUser }) => {
   let containerClass = "bg-gray-50";
   if (isUser) {
@@ -18,11 +19,11 @@ const Message = ({ message, isUser }) => {
     >
       {isUser ? (
         <span className="text-xl sm:text-2xl" title="user">
-          🥸
+          ⚓
         </span>
       ) : (
         <span className="text-xl sm:text-2xl" title="AI">
-          🦙
+          🌴
         </span>
       )}
 
