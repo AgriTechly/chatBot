@@ -1,4 +1,4 @@
-import * as botImage from "../../styles/bot.png";
+
 const Message = ({ message, isUser }) => {
   let containerClass = "bg-gray-50";
   if (isUser) {
