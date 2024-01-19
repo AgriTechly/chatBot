@@ -1,4 +1,0 @@
-langchain
-streamlit
-wxai-langchain
-langchain-community
