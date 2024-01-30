@@ -8,7 +8,7 @@ export default function EmptyState({ setOpen, setPrompt }) {
       <p>
         I can{" "}
         <button
-          className="prompt-button"
+          className="prompt-button text-green-800"
           onClick={() =>
             setPrompt(
               "Give some general agriculture advices."
@@ -19,7 +19,7 @@ export default function EmptyState({ setOpen, setPrompt }) {
         </button>
         , have a deep understanding of the latest{" "}
         <button
-          className="prompt-button"
+          className="prompt-button text-green-800"
           onClick={() =>
             setPrompt(" what are latest farming techniques, crop management strategies, and animal husbandry practices? ")
           }
@@ -29,7 +29,7 @@ export default function EmptyState({ setOpen, setPrompt }) {
         crop management strategies, and animal husbandry practices
         and willing to {" "}
         <button
-          className="prompt-button"
+          className="prompt-button text-green-800"
           onClick={() =>
             setPrompt(
               "give a general advice on how to improve the soil health of some farms in mena region."
@@ -40,7 +40,7 @@ export default function EmptyState({ setOpen, setPrompt }) {
         </button>
         , farmers and agricultural businesses adopt environmentally friendly practices that promote soil health {" "}
         <button
-          className="prompt-button"
+          className="prompt-button text-green-800"
           onClick={() =>
             setPrompt(
               "give an advice on how to improve the yield of some farms in mena region."
@@ -51,7 +51,7 @@ export default function EmptyState({ setOpen, setPrompt }) {
         </button>
          ,and efficient{" "}
         <button
-          className="prompt-button"
+          className="prompt-button text-green-800"
           onClick={() =>
             setPrompt(
               "give an advice on how to improve the water use of some farms in mena region."

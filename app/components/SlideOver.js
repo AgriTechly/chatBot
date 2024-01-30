@@ -42,10 +42,10 @@ export default function SlideOver({
                 <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
                   <form
                     onSubmit={(e) => handleSubmit(e)}
-                    className="flex h-full flex-col divide-y divide-gray-200 bg-white shadow-xl"
+                    className="flex h-full flex-col divide-y divide-green-200 bg-white shadow-xl"
                   >
                     <div className="h-0 flex-1 overflow-y-auto">
-                      <div className="bg-gray-700 px-4 py-6 sm:px-6">
+                      <div className="bg-green-700 px-4 py-6 sm:px-6">
                         <div className="flex items-center justify-between">
                           <Dialog.Title className="text-base font-semibold leading-6 text-white">
                              AgriChat
@@ -53,7 +53,7 @@ export default function SlideOver({
                           <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
-                              className="rounded-md bg-gray-700 text-gray-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                              className="rounded-md bg-green-700 text-gray-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
                               onClick={() => setOpen(false)}
                             >
                               <span className="sr-only">Close panel</span>
@@ -71,14 +71,14 @@ export default function SlideOver({
                         </div>
                       </div>
                       <div className="flex flex-1 flex-col justify-between">
-                        <div className="divide-y divide-gray-200 px-4 sm:px-6">
+                        <div className="divide-y divide-green-200 px-4 sm:px-6">
                           <div className="space-y-6 pb-5 pt-6">
                             <div>
                               <label
                                 htmlFor="description"
                                 className="block font-bold text-sm leading-6 text-gray-900"
                               >
-                                Llama Size
+                                Model Size
                               </label>
 
                               <p
@@ -115,7 +115,7 @@ export default function SlideOver({
                                                 key={modelIdx}
                                                 className={({ active }) =>
                                                   `relative cursor-default select-none py-2 pl-10 pr-4 ${active
-                                                    ? "bg-gray-100 text-gray-900"
+                                                    ? "bg-green-100 text-gray-900"
                                                     : "text-gray-900"
                                                   }`
                                                 }
@@ -155,38 +155,6 @@ export default function SlideOver({
                           <div className="space-y-6 pb-5 pt-6">
                             <div>
                               <label
-                                htmlFor="description"
-                                className="block font-bold text-sm leading-6 text-gray-900"
-                              >
-                                System Prompt
-                              </label>
-                              <p
-                                id="system-prompt-description"
-                                className="mt-2 text-xs text-gray-500"
-                              >
-                                This is prepended to the prompt and helps guide
-                                system behavior.
-                              </p>
-                              <div className="mt-3">
-                                <textarea
-                                  id="systemPrompt"
-                                  name="systemPrompt"
-                                  rows={4}
-                                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm sm:leading-6"
-                                  value={systemPrompt}
-                                  onChange={(e) =>
-                                    setSystemPrompt(e.target.value)
-                                  }
-                                >
-                                  - act as agriculture expert
-                                  - never respond to another field
-                                </textarea>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="space-y-6 pb-5 pt-6">
-                            <div>
-                              <label
                                 htmlFor="temperature"
                                 className="block text-sm font-bold leading-6 text-gray-900"
                               >
@@ -210,7 +178,7 @@ export default function SlideOver({
                                   max="5"
                                   step="0.01"
                                   name="temperature"
-                                  className="w-full h-1 bg-gray-100 accent-gray-500  rounded-lg appearance-none cursor-pointer"
+                                  className="w-full h-1 bg-green-100 accent-green-500  rounded-lg appearance-none cursor-pointer"
                                 />
                               </div>
                             </div>
@@ -240,7 +208,7 @@ export default function SlideOver({
                                   max="4096"
                                   step="1"
                                   name="maxTokens"
-                                  className="w-full h-1 bg-gray-100 accent-gray-500  rounded-lg appearance-none cursor-pointer"
+                                  className="w-full h-1 bg-green-100 accent-green-500  rounded-lg appearance-none cursor-pointer"
                                 />
                               </div>
                             </div>
@@ -271,7 +239,7 @@ export default function SlideOver({
                                   max="1"
                                   step="0.01"
                                   name="topP"
-                                  className="w-full h-1 bg-gray-100 accent-gray-500 rounded-lg appearance-none cursor-pointer"
+                                  className="w-full h-1 bg-green-100 accent-green-500 rounded-lg appearance-none cursor-pointer"
                                 />
                               </div>
                             </div>

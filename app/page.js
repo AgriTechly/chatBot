@@ -260,7 +260,7 @@ export default function HomePage() {
           <span className="hidden sm:inline-block">Chat with</span>{" "}
           <button
             className="py-2 font-semibold text-gray-500 hover:underline"
-            onClick={() => setOpen(false)}
+            onClick={() => setOpen(true)}
           >
             {model.shortened == "Llava" || model.shortened == "Salmonn"
               ? model.shortened
@@ -315,7 +315,7 @@ export default function HomePage() {
           onSubmit={handleSubmit}
           handleFileUpload={handleFileUpload}
           completion={completion}
-          //metrics={metrics}
+          metrics={metrics}
         />
 
         {error && <div>{error}</div>}
