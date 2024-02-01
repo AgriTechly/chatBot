@@ -1,3 +1,5 @@
+'use client'
+import { useState } from 'react';
 import { Analytics } from "@vercel/analytics/react";
 import "../styles/globals.css";
 import Image from "next/image";
