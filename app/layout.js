@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="https://agritechly.tech">
                   <span className="sr-only">Agritechly</span>
-                  <Image src="/static/images/agritechname.png" alt="Agritechly" width={200} height={30} />
+                  <Image src="https://agritechly.tech/static/images/agritechname.png" alt="Agritechly" width={200} height={30} />
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
