@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/",
-  output: "export",  // <=== enables static exports
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -14,6 +12,10 @@ const nextConfig = {
         hostname: "replicate.delivery",
       },
     ],
+    // add static images to the list
+    domains: ["agritechly.tech"],
+    // add static folder to the list
+    path: "/static",
   },
 };
 
