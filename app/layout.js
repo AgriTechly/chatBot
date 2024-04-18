@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Analytics } from "@vercel/analytics/react";
 import "../styles/globals.css";
 import Image from "next/image";
+import icon from "../public/images/favicon.ico";
+import logo from "../public/images/agritechname.png";
 
 export const metdata = {
   title: "AgriChat",
@@ -23,7 +25,7 @@ export default function RootLayout({ children }) {
     <html>
       <head>
         <title>AgriChat</title>
-        <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon"></link>
+        <link rel="icon" href={icon} type="image/x-icon"></link>
         <script src="https://cdn.tailwindcss.com"></script>
       </head>
       <body>
@@ -33,7 +35,7 @@ export default function RootLayout({ children }) {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="https://agritechly.tech">
                   <span className="sr-only">Agritechly</span>
-                  <Image src="/public/images/agritechname.png" alt="Agritechly" width={200} height={30} />
+                  <Image src={logo} alt="Agritechly" width={200} height={30} />
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
