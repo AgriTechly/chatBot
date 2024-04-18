@@ -260,10 +260,10 @@ export default function HomePage() {
           <span className="hidden sm:inline-block">Chat with</span>{" "}
           <button
             className="py-2 font-semibold text-gray-500 hover:underline"
-            onClick={() => setOpen(true)}
+            onClick={() => setOpen(false)}
           >
             {model.shortened == "Llava" || model.shortened == "Salmonn"
-              ? model.shortened
+              ? "AgriChat "
               : "AgriChat "}
           </button>
         </div>

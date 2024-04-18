@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html>
       <head>
         <title>AgriChat</title>
-        <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon"></link>
+        <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon"></link>
         <script src="https://cdn.tailwindcss.com"></script>
       </head>
       <body>
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="https://agritechly.tech">
                   <span className="sr-only">Agritechly</span>
-                  <Image src="/static/images/agritechname.png" alt="Agritechly" width={200} height={30} />
+                  <Image src="/public/images/agritechname.png" alt="Agritechly" width={200} height={30} />
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
                 <div className="pt-5 pb-6 px-5">
                   <div className="flex items-center justify-between">
                     <div>
-                      <Image src="/static/images/agritechname.png" alt="Agritechly" width={200} height={50} />
+                      <Image src="/public/images/agritechname.png" alt="Agritechly" width={200} height={50} />
                     </div>
                     <div className="-mr-2">
                       <button

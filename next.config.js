@@ -14,8 +14,6 @@ const nextConfig = {
     ],
     // add static images to the list
     domains: ["agritechly.tech"],
-    // add static folder to the list
-    path: "/static",
   },
 };
 
